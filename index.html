@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <style>
+        .sidebar{
+            width: 15%;
+            height: 100vh;
+        }
+        .main-content{
+            width: 85%;
+            margin-left: 230px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-between gap-3">
+
+        <!-- Sidebar -->
+        <div class="sidebar p-4 bg-secondary rounded-4 position-fixed">
+            <div class="d-flex gap-1 align-items-center justify-content-evenly">
+                <div class="">
+                    <img class="w-50 rounded-circle" src="https://i.pinimg.com/736x/f8/1b/87/f81b87e21f8ad3acd29a16f4033169f8.jpg" alt="">
+                </div>
+                <div>
+                    <b class="text-primary-emphasis"><i>Epic</i></b><br>
+                    <span>Shop</span>
+                </div>
+            </div>
+            <ul class="list-unstyled text-center">
+                <li>
+                    <button class="btn btn-danger fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-speedometer2"></i> Dashboard</button>
+                </li>
+                 <li>
+                    <button class="btn btn-primary fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-box-seam-fill"></i> Product</button>
+                </li>
+                 <li>
+                    <button class="btn btn-primary fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-award-fill"></i> Brand</button>
+                </li>
+                 <li>
+                    <button class="btn btn-primary fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-tags-fill"></i> Category</button>
+                </li>
+                 <li>
+                    <button class="btn btn-primary fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-grid-1x2-fill"></i> Card</button>
+                </li>
+                 <li>
+                    <button class="btn btn-primary fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-credit-card-fill"></i> Payment</button>
+                </li>
+                 <li>
+                    <button class="btn btn-primary fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-people-fill"></i> User</button>
+                </li>
+                 <li>
+                    <button class="btn btn-primary fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                </li>
+                 <li>
+                    <button class="btn btn-primary fs-5 mt-3 text-start btn-outline-danger border-0 text-white fw-bold w-100"><i class="bi bi-gear-fill"></i> Setting</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main -->
+        <div class="main-content p-4 bg-dark rounded-4">
+            <div class="d-flex justify-content-between p-2 bg-secondary align-items-center rounded-5">
+                <div class="w-25">
+                    <input type="text" class="form-control w-100 rounded-5" placeholder="Search..."name="search" id="">
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-light rounded-5"><i class="bi bi-envelope-at-fill"></i></button>
+                        <button class="btn btn-light rounded-5"><i class="bi bi-bell-fill"></i></button>
+                    </div>
+                    <div class="d-flex gap-2 align-items-center">
+                        <div>
+                            <img class="rounded-circle" width="60px" src="https://i.pinimg.com/736x/c4/67/ba/c467baec7ed0cc9f664beab943a2932f.jpg" alt="">
+                        </div>
+                        <div>
+                            <b class="text-primary-emphasis"><i>Miyako Shikimori</i></b><br>
+                            <span>miyakoshikimori1001@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-between align-items-center bg-secondary mt-4 p-2 rounded-5">
+                <div>
+                    <h1 class="text-light d-flex gap-2"> <i class="text-danger bi bi-box-seam-fill"></i><i>Product Controll</i></h1>
+                    <p><i>Manage, Controll, Edite, access aome feature in Products.</i></p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-outline-danger fw-bold fs-5 border-0 text-light rounded-3 w-100"> Create Product</button>
+                </div>
+            </div>
+            <div class="row g-3 mt-3">
+                <div class="d-flex  align-items-center justify-content-between ">
+                    <!-- Total Product -->
+                    <div class="bg-body p-4 rounded-3 justify-content-between d-flex align-items-md-center" style="width: 24%;">
+                       <div>
+                            <p class="text-secondary fw-semibold mb-2">
+                                <b>Total Products</b>
+                            </p>
+                            <h2 class="fw-bold mb-0 text-danger">3,500</h2>
+                            <span class="text-success">
+                                <i class="bi bi-arrow-up">12% Increase</i> 
+                            </span>
+                       </div>
+                        <div class="icon-box">
+                            <i class="bi bi-box-seam fs-1"></i>
+                        </div>
+                    </div>
+                    <!-- Total Oders -->
+                    <div class="bg-body p-4 rounded-3 justify-content-between d-flex align-items-md-center" style="width: 24%;">                        
+                        <div>
+                            <p class="text-secondary fw-semibold mb-2">
+                                <b>Total Orders</b>
+                            </p>
+                            <h2 class="fw-bold mb-0 text-danger">2,500</h2>
+                            <span class="text-success">
+                                <i class="bi bi-arrow-up">8% Increase</i> 
+                            </span>
+                        </div>
+                        <div class="icon-box">
+                            <i class="bi bi-cart-check fs-1"></i>
+                        </div>
+                    </div>
+                     <!-- Total Customers -->
+                    <div class="bg-body p-4 rounded-3 justify-content-between d-flex align-items-md-center" style="width: 24%;">
+                       <div>
+                            <p class="text-secondary fw-semibold mb-2">
+                                <b>Total Customers</b>
+                            </p>
+                            <h2 class="fw-bold mb-0 text-danger">1,250</h2>
+                            <small class="text-success">
+                                <i class="bi bi-arrow-up">15% Increase </i> 
+                            </small>
+                        </div>
+                        <div class="icon-box">
+                            <i class="bi bi-people fs-1"></i>
+                        </div>
+                    </div>
+                     <!-- Total Revenue -->
+                    <div class="bg-body p-4 rounded-3 justify-content-between d-flex align-items-md-center" style="width: 24%;">
+                        <div>
+                            <p class="text-secondary fw-semibold mb-2">
+                                <b>Total Revenue</b>
+                            </p>
+                            <h2 class="fw-bold mb-0 text-danger">$15,200</h2>
+                            <small class="text-success">
+                                <i class="bi bi-arrow-up">20% Increase</i> 
+                            </small>
+                        </div>
+                        <div class="icon-box">
+                            <i class="bi bi-currency-dollar fs-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 mt-4 ">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr class="bg-secondary">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Brand</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th colspan="2">Status</th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                         <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                        <tr>
+                            <td>0001</td>
+                            <td>Coca</td>
+                            <th>
+                                <img class="rounded-circle" width="45px" height="30px" src="https://i.pinimg.com/1200x/ef/75/7a/ef757a0d9322a1259bf17838bfe84126.jpg" alt="">
+                            </th>
+                            <td>Coca-Cola</td>
+                            <td>Drink</td>
+                            <td>0.55$</td>
+                            <td><mark>Low Stock</mark></td>
+                            <td><i class="bi bi-pen-fill"></i></td>
+                            <td><i class="bi bi-trash-fill"></i></td>
+                        </tr>
+                   </tbody> 
+                </table>
+            </div>
+            
+
+        </div>
+
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
